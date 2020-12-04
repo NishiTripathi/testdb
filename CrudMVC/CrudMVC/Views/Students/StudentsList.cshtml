@@ -1,8 +1,6 @@
 ﻿@model IEnumerable<CrudMVC.Models.Students>
 
-@{
-    ViewData["Title"] = "StudentsList";
-}
+@{ ViewData["Title"] = "StudentsList"; }
 
 <h1>StudentsList</h1>
 
@@ -13,8 +11,8 @@
     <thead>
         <tr>
             @*<th>
-            @Html.DisplayNameFor(model => model.ID)
-        </th>*@
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -34,46 +32,53 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             @*<th>
-            @Html.DisplayNameFor(model => model.DepartmentID)
-        </th>*@
+                    @Html.DisplayNameFor(model => model.DepartmentID)
+                </th>*@
 
             <th>Action</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            @*<td>
+        @foreach (var item in Model)
+        {
+<tr>
+    @*<td>
             @Html.DisplayFor(modelItem => item.ID)
         </td>*@
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FatherName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mobile)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Department)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            @*<td>
+    <td>
+        @item.Name
+        @*@Html.DisplayFor(modelItem => item.Name)*@
+    </td>
+    <td>
+        @item.FatherName
+        @*@Html.DisplayFor(modelItem => item.FatherName)*@
+    </td>
+    <td>
+        @item.Email
+        @*@Html.DisplayFor(modelItem => item.Email)*@
+    </td>
+    <td>
+        @item.Mobile
+        @*@Html.DisplayFor(modelItem => item.Mobile)*@
+    </td>
+    <td>
+        @item.Department
+        @*@Html.DisplayFor(modelItem => item.Department)*@
+    </td>
+    <td>
+        @item.Description
+        @*@Html.DisplayFor(modelItem => item.Description)*@
+    </td>
+    @*<td>
             @Html.DisplayFor(modelItem => item.DepartmentID)
         </td>*@
 
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+        @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+    </td>
+</tr>}
     </tbody>
 </table>
+

@@ -16,5 +16,6 @@ namespace CrudMVC.Data
 
         public DbSet<Students> tblStudents { get; set; }
         public DbSet<Departments> tblDepartments { get; set; }
+
     }
 }

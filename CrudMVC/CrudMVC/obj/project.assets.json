@@ -8730,20 +8730,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nikhil\\.nuget\\packages\\": {}
+    "C:\\Users\\Nishi Tripathi\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Net_Projects\\CrudMVC\\CrudMVC\\CrudMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Nishi Tripathi\\Desktop\\testdb-master\\CrudMVC\\CrudMVC\\CrudMVC.csproj",
       "projectName": "CrudMVC",
-      "projectPath": "C:\\Net_Projects\\CrudMVC\\CrudMVC\\CrudMVC.csproj",
-      "packagesPath": "C:\\Users\\nikhil\\.nuget\\packages\\",
-      "outputPath": "C:\\Net_Projects\\CrudMVC\\CrudMVC\\obj\\",
+      "projectPath": "C:\\Users\\Nishi Tripathi\\Desktop\\testdb-master\\CrudMVC\\CrudMVC\\CrudMVC.csproj",
+      "packagesPath": "C:\\Users\\Nishi Tripathi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nishi Tripathi\\Desktop\\testdb-master\\CrudMVC\\CrudMVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nikhil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Nishi Tripathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

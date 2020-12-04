@@ -31,6 +31,7 @@ namespace CrudMVC.Models
         [Required(ErrorMessage = "Required")]
         [Display(Name="Department")]
         public int DepartmentID { get; set; }
+       
 
         [NotMapped]
         public string Department { get; set; }

@@ -20,7 +20,7 @@ namespace CrudMVC.Controllers
         {
             try
             {
-                //var stdList = _db.tblStudents.ToList();
+                // var stdList = _db.tblStudents.ToList();
 
                 var stdList = from a in _db.tblStudents
                               join b in _db.tblDepartments
@@ -38,31 +38,31 @@ namespace CrudMVC.Controllers
                                   DepartmentID = a.DepartmentID,
                                   Department = b == null ? "" : b.Name
                               };
+
                 return View(stdList);
+
             }
             catch (Exception)
             {
                 throw;
             }
         }
-
         public IActionResult AddStudent()
         {
             loadDDL();
             return View();
         }
-
         [HttpPost]
-        public async Task<IActionResult>AddStudent(Students obj)
+        public async Task<IActionResult> AddStudent(Students obj)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    
+
                     _db.tblStudents.Add(obj);
                     await _db.SaveChangesAsync();
-                  
+
                     return RedirectToAction("StudentsList");
                 }
                 return View(obj);
@@ -73,6 +73,7 @@ namespace CrudMVC.Controllers
             }
         }
 
+
         private void loadDDL()
         {
             try
@@ -82,7 +83,7 @@ namespace CrudMVC.Controllers
                 deptList = _db.tblDepartments.ToList();
 
                 //deptList.Insert(0, new Departments { ID = 0, Name = "Please Select" });
-                
+
                 ViewBag.DeptList = deptList;
             }
             catch (Exception)
